@@ -1,0 +1,30 @@
+fun main() {
+    
+    var age = 24
+    var layers = 5
+    println("WELCOME TO THE TEAM !!!")
+    println()
+    candlesCake(age)
+    fillingCake(age,layers)
+    
+}
+
+fun candlesCake(age: Int){
+    repeat(age){
+        print(",")
+    }
+    println()
+    repeat(age){
+        print("|")
+    }
+    println()
+}
+
+fun fillingCake(age: Int, layers: Int){
+    repeat(layers){
+        repeat(age){
+            print("@")
+        }
+        println()
+    }
+}
